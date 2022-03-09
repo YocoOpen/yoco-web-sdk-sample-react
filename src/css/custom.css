@@ -1,0 +1,250 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #36a0db;
+  --ifm-color-primary-dark: #2593d0;
+  --ifm-color-primary-darker: #238bc5;
+  --ifm-color-primary-darkest: #1d72a2;
+  --ifm-color-primary-light: #4dabdf;
+  --ifm-color-primary-lighter: #59b0e1;
+  --ifm-color-primary-lightest: #7bc1e7;
+  --ifm-footer-background-color: #2d3033;
+  --ifm-menu-color-background-active: #00000000;
+  --ifm-menu-color-background-hover: #00000000;
+  --ifm-pre-padding:20px;
+}
+.square-title{
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar {
+}
+.sidebar_node_modules {
+  padding-top: 0px;
+}
+.menu {
+  background: #F2F5F6;
+}
+
+.menu__link {
+  color: #010203;
+}
+.menu__link--active {
+  color: #0094CC;
+}
+.store-header {
+  display:flex
+}
+.welcome-cell {
+  padding-top: 10px;
+  max-width: 260px;
+  cursor: pointer;
+}
+.welcome-cell:hover {
+  background: #2299dd12;
+}
+.store-logo{
+  width: 64px;
+  height: 64px;
+  display: flex;
+  text-align: center;
+  background: #706dbf;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 52px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.product {
+  padding: 20px;
+  text-align: center;
+  background: #e5e8ee66;
+}
+.store-content {
+  padding-top: 20px;
+}
+
+.store-name {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 4px;
+}
+
+.store-details{
+
+  background: #dceaf1;
+  display: flex;
+  padding: 8px;
+  border-radius: 4px;
+}
+.image-block{
+  flex-direction: column;
+  padding: 20px;
+  display: flex;
+  border-radius: 4px;
+}
+.image-block-hover {
+  padding: 20px;
+  display: inline-block;
+  background: #2DA0DB;
+}
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.success-payment-message {
+  color: forestgreen;
+   line-height: 1.4;
+   padding: 10px 0 0;
+ }
+
+/* For some reason H2s in JSX are sized differently - make them work as normal */
+.markdown h2 {
+  --ifm-h2-font-size: 2rem;
+  margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading) );
+  margin-top: calc(var(--ifm-h2-vertical-rhythm-top) * var(--ifm-leading));
+}
+
+main {
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.img-container {
+}
+.img-container-with-margin {
+ margin-top: 32px;
+ margin-bottom: 32px;
+}
+
+.submit-button {
+  animation: shadow-pulse 2s infinite;
+  height: 48px;
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  background: #37a2e0;
+  margin: 18px auto 0 auto;
+  border-width: 0;
+  width: 100%;
+  display: block;
+  transition: 0.75s cubic-bezier(0.41, 1.44, 0.47, 1);
+  cursor: pointer;
+  outline: none;
+}
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(2, 150, 205, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(2, 150, 205, 0);
+  }
+}
+
+@media (max-width: 996px) {
+  .mobile-centered {
+    text-align: center;
+  }
+}
+
+/* Avoid weird loading button state because of delayed import of SDK JS */
+.yc-submit-button {
+  height: 48px;
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  background: #37a2e0;
+  margin: 18px auto 0 auto;
+  border-width: 0;
+  width: 100%;
+  display: block;
+  transition: 0.75s cubic-bezier(0.41, 1.44, 0.47, 1);
+  cursor: pointer;
+  outline: none;
+}
+
+
+/* Browser mockup code
+ * Contribute: https://gist.github.com/jarthod/8719db9fef8deb937f4f
+ * Live example: https://updown.io
+ */
+.browser-mockup {
+  border-top: 2em solid rgba(230, 230, 230, 0.7);
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  border-radius: 3px 3px 0 0
+}
+
+.browser-mockup:before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -1.25em;
+  left: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #f44;
+  box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+}
+
+.browser-mockup > * {
+  display: block;
+}
+
+.browser-mockup {
+  margin: 2em;
+  flex: 1;
+}
+
+.popup-mockup {
+  border-width: 1px;
+  border-color: #A3B4CC;
+  border-radius: 20px;
+}
+
+/* Tagging for markdown headers - see TagHeading */
+a.hash-link:after {
+  visibility: visible;
+  font-size: 14px;
+  border-radius: 28px;
+  padding: 6px 12px;
+  background: #ebedf0;
+  margin-left: -10px;
+  color: black;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.hash-link {
+  opacity: 1 !important;
+  visibility: hidden;
+}
+
+*:hover > .hash-link {
+}
+
+*:hover > .hash-link:after {
+  underline: none;
+}
+
+
